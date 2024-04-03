@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('nit');
             $table->string('direccion');
             $table->string('telefono');
+            $table->string('tipousuario');
             $table->rememberToken();
             $table->timestamps();
             

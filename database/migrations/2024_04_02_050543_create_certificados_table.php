@@ -14,6 +14,9 @@ return new class extends Migration
         Schema::create('certificados', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->date('fechaexpedicion');
+            $table->int('');
+
         });
     }
 

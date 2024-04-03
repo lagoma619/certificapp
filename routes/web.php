@@ -20,6 +20,9 @@ Route::get('/prueba', function () {
     return view('content/prueba');
 });
 
+
+Route::get('/cargarexcel', [App\Http\Controllers\CargarExcel::class, 'cargarexcel'])->name('cargarexcel');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
